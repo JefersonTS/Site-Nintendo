@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+section#img-tabela {
+    width: 100%;
+    margin: auto;
+}
+iframe#frame-perif{
+     width: 360px;
+     height: 280px;
+     border: none;
+     overflow-x: hidden;
+     overflow-y: hidden;
+ }
+iframe#frame-perif::-webkit-scrollbar{
+     display: none;
+ }
+table img#img-tabela{
+    right: 500px;
+}

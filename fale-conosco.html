@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8"/>
+    <title>Super Nintendo</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo2.css"/>
+    <link rel="stylesheet" href="css/form.css"/>
+    <link rel="icon" type="image/png" href="imagens/controle-snes-transp-ico.ico" />
+
+    <script>
+        function calc_total(){
+            var qtd = parseInt(document.getElementById('cqtd').value);
+            var tot = qtd * 300;
+            document.getElementById('ctot').value = tot;
+        }
+    </script>
+</head>
+<script>
+    function mudaFoto (foto){
+        document.getElementById("icone").src=foto;
+    }
+
+</script>
+
+<body>
+
+<div id="interface">
+    <header id="cabecalho">
+
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul>
+                <a href="index.html"> <li onmouseover="mudaFoto('imagens/start1.png')" onmouseout="mudaFoto('imagens/dk.jpg')"> Início </li> </a>
+                <a href="loja.html"> <li onmouseover="mudaFoto('imagens/loja.png')" onmouseout="mudaFoto('imagens/dk.jpg')"> Loja </li> </a>
+                <a href="melhores-jogos.html"> <li onmouseover="mudaFoto('imagens/sem.gif')" onmouseout="mudaFoto('imagens/dk.jpg')"> Melhores Jogos </li> </a>
+                <a href="historia.html"> <li onmouseover="mudaFoto('imagens/historia.png')" onmouseout="mudaFoto('imagens/dk.jpg')"> História </li> </a>
+                <a href="fale-conosco.html"> <li onmouseover="mudaFoto('imagens/fale-conosco.png')" onmouseout="mudaFoto('imagens/dk.jpg')"> Fale conosco </li> </a>
+            </ul>
+        </nav>
+        <h1>Nintendo Company</h1>
+        <h2>Super Nintendo Entertainment System</h2>
+
+
+        <img id="icone" src="imagens/dk.jpg"/>
+
+
+    </header>
+            <form method="post" id="fcontato" action="mailto:jefersontomas2011@hotmail.com" oninput="calc_total();">
+                <fieldset id="usuario">
+
+                <legend id = "cabecalho-do-legend">Identificação do Usuário</legend>
+                    <p> <label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="Nome Completo"/></p>
+                    <p> <label for="csenha">Senha: <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 dígitos"/> </p>
+                    <p> <label for="cmail">E-mail: <input type="email" name="tmail" id="cmail" size="30" maxlength="50" placeholder="Digite seu e-mail"/> </p>
+                    <fieldset id="sexo"><legend id = "cabecalho-do-legend">Sexo</legend>
+                          <input type="radio" name="tsexo" id="cmasc"/> <label for="cmasc" id="botao-sexo">Masculino</label>  </br>
+                          <input type="radio" name="tsexo" id="cfem"/> <label for="cfem" id="botao-sexo">Feminino</label>
+                    </fieldset>
+                    <p>Data de Nascimento: <input type="date"/> </p>
+
+                </fieldset>
+
+                <fieldset id="endereco">
+
+                <legend id = "cabecalho-do-legend">Endereço do Usuário</legend>
+                <p>Logradouro: <input type="text" name="trua" id="crua" size="15" maxlength="80" placeholder="Rua, Av., Trav."/></p>
+                <p>Número: <input type="number" name="tnum" id="cnum" min="0" max="9999999"/></p>
+                <p>Estado:
+                <select name="test" id="cest">
+
+                    <optgroup label="Região Norte">
+                        <option>AC</option>
+                        <option>AM</option>
+                        <option>AP</option>
+                        <option>PA</option>
+                        <option>TO</option>
+                        <option>RO</option>
+                        <option>RR</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option>AL</option>
+                        <option>BA</option>
+                        <option>CE</option>
+                        <option>MA</option>
+                        <option>PB</option>
+                        <option>PE</option>
+                        <option>PI</option>
+                        <option>RN</option>
+                        <option>SE</option>
+                    </optgroup>
+
+                    <optgroup label="Região Centro-Oeste">
+                        <option>MT</option>
+                        <option>MS</option>
+                        <option>GO</option>
+                    </optgroup>
+
+                    <optgroup label="Sudeste">
+                        <option>MG</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>ES</option>
+                    </optgroup>
+
+                    <optgroup label="Região Sul">
+                        <option>PR</option>
+                        <option>RS</option>
+                        <option>SC</option>
+                    </optgroup>
+
+                </select></p>
+                <p>Cidade: <input type="text" name="ccid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades"/></p>
+                    <datalist id="cidades" value="cidades">
+                        <option value="Belo Horizonte"></option>
+                        <option value="Araxá"></option>
+                        <option value="São José da Barra"></option>
+                    </datalist>
+
+                </fieldset>
+
+                <fieldset id="mensagem">
+
+                <legend id = "cabecalho-do-legend">Mensagem do Usuário</legend>
+                <p>Grau de Urgência: Min <input type="range" name="turg" id="curg" min="0" max="10" step="1"/>Max</p>
+                <p id="mensagem-fale-conosco">Mensagem: </p>
+                    <textarea name="tmsg" id="cmsg" cols="35" rows="5" placeholder="Digite sua mensagem"></textarea>
+
+                </fieldset>
+
+                <fieldset id="pedido">
+
+                <legend id = "cabecalho-do-legend">Quero um Console Completo</legend>
+
+                <p>
+                    <input type="checkbox" name="tped" id="cped" checked/>
+                    <label for="cped"> Gostaria de adquirir Console Completo quando disponível</label>
+                </p>
+
+                <p>
+                    <label for="ccor"> Cor:</label>
+                    <input type="color" name="tcor" id="ccor"/>
+                </p>
+
+                <p>
+                    <label for="cqtd"> Quantidade: </label>
+                    <input type="number" name="tqtd" id="cqtd" min="0" max="10" value="0"/>
+                </p>
+
+                <p>
+                    <label for="ctot"> Preço Total: R$</label>
+                    <input type="text" name="ttot" id="ctot" placeholder="Total a pagar" readonly="0"/>
+                </p>
+
+                </fieldset>
+
+
+                <input id="imagem-enviar" type="image" name="tenviar" src="imagens/botao-enviar.png"/>
+
+            </form>
+    <br>
+
+    <footer id="rodape">
+        <p>
+            Preserve o Meio Ambiente </br>
+            <a href="https://www.facebook.com/LordTomas" target="_blank">Facebook</a>
+        </p>
+        <div style='float:right;'>
+            <a href='#'>
+                <img id="topo" src="imagens/voltar.png" style='display:scroll; position:fixed; bottom:5px; right:5px;' title='Voltar ao Topo da Página'/>
+            </a>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

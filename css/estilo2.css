@@ -1,0 +1,278 @@
+@carset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill'); /*Fonte do Google Fontes*/
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Jim+Nightshade');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+@font-face { /*Fonte Externa*/
+	font-family:fontelogo ; /*Nome da Fonte*/
+	src: url("../fonts/bubblegum-sans-regular.otf"); /*Caminho da fonte*/
+}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eee;
+	color: #0000;
+}
+
+/*Formatação de interface*/
+
+#interface{
+	background-color:#fff;
+	width: 900px; /*largura da caixa*/
+	margin: 0px auto 0px auto;
+	box-shadow: 0px 0px 25px;
+	padding: 10px;
+}
+p{
+	color: black;
+	text-align: justify;
+	text-indent: 50px;
+	text-indent: 50px;
+}
+#icone {
+	position: relative;
+	left:735px;
+	top: -60px;
+}
+#cabecalho{
+	border-bottom: 1px #ff0011 dotted; /*Borda Inferior*/
+	height: 150px;
+	background: url(../_imagens/nintendo-logo.jpg) no-repeat 0px 90px;
+}
+header#cabecalho h1{
+	font-family: 'Hanalei Fill', cursive; /*Fonte do Titulo*/
+	font-size: 32pt; /*Tamalho da fonte*/
+	color: #ff0011;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.7);
+	margin-bottom: 0px ; /*Margem inferior*/
+}
+header#cabecalho h2{
+	font-family: 'Indie Flower', cursive;
+	color: #ff0011;
+	font-size: 18pt;
+	margin-top: 0px; /*Margem superior*/
+}
+
+/*Formatação de imagens com legenda*/
+
+.figura-com-legenda{
+	position: relative;
+	border: 8px solid #fff;
+	box-shadow: 0px 0px 0px 10px #999999;
+}
+.figura-com-legenda img{
+	width: 100%;
+	height: 100%;
+}
+.figura-com-legenda figcaption{
+	opacity: 0; /*legenda fica transparente*/
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4); 
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding: 10px;
+	box-sizing: border-box; /*cria uma caixa dentro da borda*/
+	transition: opacity 1s;
+}
+.figura-com-legenda:hover figcaption{
+	opacity: 1;
+}
+#video{
+	margin-left: 35px;
+	border:3px solid #e00d29;
+}
+
+/*Formatação do MENU*/
+
+nav#menu ul{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 11pt;
+	list-style: none;
+	text-transform: uppercase; /*Deixa os Caracteres em Caixa alta*/
+	position: relative;
+	float: right;
+	padding: 0px;
+	margin: 0px;
+	top: 0px;
+}
+#menu li{
+	display: inline-block; /*Deixa o menu lado a lado*/
+	background-color: #000000; /*Cor de fundo do "quadrado" do menu 1º*/
+	padding: 8px; /*Espaço dentro da caixa*/
+	margin: 1px /*Espaço entre as caixas*/
+}
+#menu a{
+	color: #e00d29;/*Cor da letra do menu 1º*/
+	text-decoration: none;
+}
+#menu li:hover{
+	background-color: #e00d29; /*Cor de fundo da transição do menu*/
+	transition: background 1s;
+	color: #fff; /*Cor da letra da transição do menu*/
+}
+nav#menu h1{
+	display: none;
+}
+section#corpo{
+	display: block;
+	width:  500px;
+	float: left;
+	border-right: 1px dotted #ff0011; /*Cor da linha do meio*/
+	padding-right: 15px;
+}
+section#corpo-2 h1{
+	text-align: center;
+	font-family: 'Jim Nightshade', cursive;
+	background-color: #000000;
+	color: #ff0011;
+	font-size: 20pt;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+aside#lateral{
+	display: block;
+	width: 350px;
+	float: right;
+	margin-top: 26px;
+}
+
+/*Formatar o Rodapé*/
+footer#rodape{
+	clear: both;
+	border-top: 1px dotted #ff0011;
+	font-family: 'Hanalei Fill', cursive;
+}
+footer#rodape p,a {
+	text-align: center;
+}
+
+#seta{
+	margin-top: -70px;
+	margin-left: 800px;
+}
+
+/*Formatação da Tabela*/
+
+#tabela{
+	border:3px solid #e00d29; /*Cor e tamanho da Borda da tabela*/
+	border-spacing: 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#tabela caption{
+	color: #ff0011;
+	font-size: 15pt;
+	font-family: 'Hanalei Fill', cursive;
+}
+#tabela td{
+	border: 4px dashed #000000; /*Cor e tamanho da linha da tabela*/
+	padding: 10px; /*Espaço interno*/
+	vertical-align: center;
+}
+#tabela .ce{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:10pt;
+	color: #fff;
+	background-color: #ff0011;
+	font-weight: bold;
+	text-align: right;
+	text-align: center;
+}
+#tabela .cd{
+	font-family: 'Indie Flower', cursive;
+	color: #fff;
+	background-color: #ff0011;
+}
+#corpo{
+	width: 480px;
+	height: auto;
+	float: left;
+	border-right: 1px dotted #ff0011;
+	padding: 0px 15px 15px 0px;
+}
+#noticia h2{
+	text-align: center;
+	font-family: 'Jim Nightshade', cursive;
+	background-color: #000000;
+	color: #ff0011;
+	font-size: 20pt;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+#lateral h2{
+	text-align: center;
+	font-family: 'Jim Nightshade', cursive;
+	background-color: #000000;
+	color: #ff0011;
+	font-size: 20pt;
+	padding: 5px 0px 5px 10px;
+	margin: 10px 0px 10px 0px;
+}
+#imagem{
+	position: relative;
+	left: 100px;
+	top: -120px;
+}
+#saiba{
+	color: black;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10pt;
+}
+.fig-lateral-1{
+	position: relative;
+	left: 40px;
+	margin-bottom: 180px;
+}
+
+/*formatação melhores jogos(audio e video)*/
+
+img#melhores{
+	position: relative;
+	left:250px;
+}
+
+img#radio-tv{
+	position: relative;
+	left: 150px;
+}
+
+audio#musica{
+	bottom: 60px;
+	position: relative;
+	left: 615px;
+	width: 200px;
+}
+
+video#filme{
+	position: relative;
+	left: 190px;
+	bottom: 430px;
+	width: 430px;
+}
+div#tv-radio{
+	width: 0px;
+	height: 0px;
+}
+
+/*formatação fale-conosco)*/
+
+#cabecalho-do-legend{
+	color: black;
+}
+#botao-sexo{
+	color: #000;
+}
+#imagem-enviar{
+	margin-top: 15px;
+}
+p#mensagem-fale-conosco{
+	margin-top: 40px;
+}
+#cmsg{
+	margin-top: -70px;
+	margin-left: 140px;
+}

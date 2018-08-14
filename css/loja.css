@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+#h2 h2 {
+    text-align: center;
+    font-family: 'Jim Nightshade', cursive;
+    background-color: #000000;
+    color: #ff0011;
+    font-size: 20pt;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+ul#produtos{
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+ul#produtos li{
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border:3px solid #e00d29;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px #000000;
+    -webkit-transition: all .5s ease-in;
+}
+
+ul#produtos li span{
+    opacity: 0;
+    color: #000000;
+    text-shadow: 1px 1px 1px #ff0011;
+    background-color: aliceblue;
+    line-height:370px;
+    padding: 5px;
+}
+
+ul#produtos li:hover{
+    -webkit-transform: scale(1.5);
+}
+
+ul#produtos li:hover span{
+    opacity: 1;
+}
+
+ul#produtos li#foto1 {
+    background: url('../_imagens/controle-pc.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto1:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
+
+ul#produtos li#foto2 {
+    background: url('../_imagens/controle.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto2:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
+
+ul#produtos li#foto3 {
+    background: url('../_imagens/fonte.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto3:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
+
+ul#produtos li#foto4 {
+    background: url('../_imagens/fonte2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto4:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
+
+ul#produtos li#foto5 {
+    background: url('../_imagens/cabo1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto5:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
+
+ul#produtos li#foto6 {
+    background: url('../_imagens/cabo2.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto6:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
+
+ul#produtos li#foto7 {
+    background: url('../_imagens/mouse1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto7:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
+
+ul#produtos li#foto8 {
+    background: url('../_imagens/scope1.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 402px 402px;
+    background-color: #ffffff;
+}
+
+ul#produtos li#foto8:hover{
+    background-position: 0px 0px;
+    background-size: 201px 201px;
+}
